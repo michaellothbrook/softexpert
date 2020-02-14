@@ -26,7 +26,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="<?=base_url('produtos')?>">Produtos</a>
+						<a class="nav-link" href="<?=base_url('form/create')?>">Cadastrar</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Pricing</a>
@@ -39,15 +39,15 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	  <div class="container">
 		  <div class="row">
 			  <div class="col-12 text-center">
-				  <h1 class="">Todos os produtos</h1>
+				  <h1 class="">Todos os vinhos</h1>
 				  <div class="card-columns">
 					<?php foreach($todos_produtos as $produtos) : ?>
 						<div class="card" style="width: 18rem;">
 							<img class="card-img-top" src="./img/vinho.jpg" alt="Card image cap">
 							<div class="card-body">
-								<h5 class="card-title">Vinhos</h5>
+								<h5 class="card-title"><?=$produtos->nome?></h5>
 								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-								<a href="<?=base_url('/produtos')?>" class="btn btn-primary">ver todos!</a>
+								<a href="<?=base_url('/produtos')?>" class="btn btn-primary">ver detalhes!</a>
 							</div>
 						</div>
 					<?php endforeach ?>

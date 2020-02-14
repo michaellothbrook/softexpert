@@ -53,5 +53,10 @@ $route['default_controller'] = 'Principal';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
+//listar produtos
 $route['/produtos'] = 'Produtos';
-$route['produtos/(:any)'] = 'Produtos/ProdutoDetails';
+$route['produtos/(:any)'] = 'Produtos/ProdutosDetails';
+
+//cadastrar produtos
+$route['form/create'] = 'Produtos/formCadastro';
+$route['form/submit'] = 'Produtos/sendData';

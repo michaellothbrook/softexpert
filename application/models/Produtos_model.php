@@ -7,8 +7,15 @@ class Produtos_model extends CI_Model {
 
 	public function listarProdutos()
 	{
-		$query = $this->db->get('vinhos');
+		$query = $this->db->get('produtos');
 		
 		return $query->result();
+	}
+
+	public function saveDatabase($dados)
+	{
+		if ($dados) {
+			$this->db->insert('produtos',$dados);
+		}
 	}
 }
