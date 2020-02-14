@@ -37,22 +37,22 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	  </header>
 	  </script>
 	  <div class="container">
+		  <h1 class="text-center">Todos os vinhos</h1>
 		  <div class="row">
-			  <div class="col-12 text-center">
-				  <h1 class="">Todos os vinhos</h1>
-				  <div class="card-columns">
-					<?php foreach($todos_produtos as $produtos) : ?>
-						<div class="card" style="height:450px">
-							<img class="card-img-top" src="./img/vinho.jpg">
-							<div class="card-body">
-								<h5 class="card-title"><?=$produtos->nome?></h5>
-								<p class="card-text">Vinho - <?=$produtos->nome?></p>
-								<a href="<?=base_url('/produtos')?>" class="btn btn-primary">ver detalhes!</a>
-							</div>
+		  	<?php foreach($todos_produtos as $produtos) : ?>
+			<div class="col-4 text-center p-3">
+				<div class="">
+					<div class="card">
+						<img class="card-img-top" src="./img/vinho.jpg">
+						<div class="card-body">
+							<h5 class="card-title"><?=$produtos->nome?></h5>
+							<p class="card-text">Vinho - <?=$produtos->nome?></p>
+							<a href="<?=base_url('/produtos')?>" class="btn btn-primary">ver detalhes!</a>
 						</div>
-					<?php endforeach ?>
-				  </div>
-			  </div>
+					</div>
+				</div>
+			</div>
+			<?php endforeach ?>
 		  </div>
 	  </div>
 	<!-- Optional JavaScript -->
