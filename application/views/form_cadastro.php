@@ -108,7 +108,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				})
 				.done(function(response) {
     				console.log(response);
-					window.location.replace('/');
+					window.location.replace(url);
 				})
 			})
 		})

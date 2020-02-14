@@ -16,7 +16,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
   <body>
 	  <header>
 		<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-between">
-			<a class="navbar-brand" href="#">vinho - Michael</a>
+			<a class="navbar-brand" href="<?=base_url()?>">SOFTEXPERT</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
@@ -42,11 +42,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				  <h1 class="">Todos os vinhos</h1>
 				  <div class="card-columns">
 					<?php foreach($todos_produtos as $produtos) : ?>
-						<div class="card" style="width: 18rem;">
-							<img class="card-img-top" src="./img/vinho.jpg" alt="Card image cap">
+						<div class="card" style="height:450px">
+							<img class="card-img-top" src="./img/vinho.jpg">
 							<div class="card-body">
 								<h5 class="card-title"><?=$produtos->nome?></h5>
-								<p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+								<p class="card-text">Vinho - <?=$produtos->nome?></p>
 								<a href="<?=base_url('/produtos')?>" class="btn btn-primary">ver detalhes!</a>
 							</div>
 						</div>
