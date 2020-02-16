@@ -1,0 +1,40 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+header {
+	background-image: url('../img/header.jpg');
+	background-size: contain;
+	color: #fff;
+	height: auto;
+}
+footer {
+	height: auto;
+	background-color: #000;
+}
+section#index {
+	height: auto;
+}
+section#form {
+	height: 80vh;
+}
+section#details {
+	height: 80vh;
+}
+.form-comprar {
+	background-color: #222632;
+	color: #fff;
+}
+@media (max-width: 768px) {
+	section#index {
+		height: auto;
+	}
+	section#details {
+		height: auto;
+	}
+	section#form {
+		height: 100%;
+	}
+}
+

@@ -9,13 +9,14 @@ class Principal extends CI_Controller {
 	public function __construct()
 	{
 		parent::__construct();
+		$this->data['current_title'] = 'Home';
 		$this->data['todos_produtos'] = $this->Produtos_model->listarProdutos();
-		
 	}
 	
 	public function index()
 	{
-		$this->load->view('index',$this->data);
+		$this->load->template('index',$this->data);
 	}
+
 	
 }

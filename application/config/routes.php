@@ -54,9 +54,14 @@ $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
 
 //listar produtos
-$route['/produtos'] = 'Produtos';
-$route['produtos/(:any)'] = 'Produtos/ProdutosDetails';
+$route['produtos/(:num)'] = 'produtos/produtoDetails/$1';
 
 //cadastrar produtos
 $route['form/create'] = 'Produtos/formCadastro';
 $route['form/submit'] = 'Produtos/sendData';
+
+//comprar produtos
+$route['form/comprar/(:num)'] = 'Produtos/saveCompra/$1';
+
+//vendas
+$route['produtos/vendas'] = 'Produtos/produtosVendas';
